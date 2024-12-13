@@ -1,0 +1,388 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Logo Section */
+.logo img {
+    width: 150px;
+    margin: 20px auto;
+    display:inline;
+}
+
+/* Navigation Bar */
+.nav-container {
+    background-color: #0066cc;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0052a3;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #0066cc;
+}
+
+.search-bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /*search bar will be visible on scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Styling for the search bar */
+#searchBar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Section */
+.section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: #090000;
+    box-shadow: 0 2px 5px #fff;
+    border-radius: 8px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #444;
+    border-bottom: 2px solid #0066cc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.medicine {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.medicine img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.medicine label {
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.medicine button {
+    width: 10%;
+    padding: 12px 0;
+}
+
+.medicine input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons Section */
+#buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+#buttons button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buttons button:hover {
+    background-color: #0052a3;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Cart Table Styles */
+#cartTable {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(124, 163, 235, 0.1);
+}
+
+#cartTable thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#cartTable th, #cartTable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#cartTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#cartTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#cartTable tfoot {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+#cartTable tfoot td {
+    color: #333;
+}
+
+/* Buttons */
+button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+* Form Styles */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="month"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#confirmationMessage.success {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#confirmationMessage.error {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-container nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medicine {
+        flex: 1 1 100%;
+    }
+
+    #cartTable {
+        width: 100%;
+    }
+
+    #cartTable th, #cartTable td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container nav ul li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .medicine img {
+        width: 80px;
+    }
+
+    #buttons button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer .social-media-icons img {
+        width: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+.social-media-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.social-media-icons li {
+    margin: 0 10px;
+}
+
+.social-media-icons li a img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-media-icons li a img:hover {
+    transform: scale(1.1);
+    filter: invert(0.8);
+}
+

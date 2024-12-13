@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DocCare</title>
+        <!--Linking with css-->
+        <link rel="stylesheet" href="stylesheet/styles.css">
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <section>
+            <!--Hospital logo-->
+            <div class="logo">
+                <a href="index.html"><img src="Images/Doccare.jpg" alt="Hospital Logo">
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <!--Navigation bara begins-->
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html">Pharmacy</a></li>
+                        <li><a href="payments.html">Payments</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--Navigation bar ends-->
+
+        <h1>Payment Details</h1>
+    <form id="Payment" onsubmit="processPayment(event)">
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <h2>Delivery Details</h2>
+        <label for="address">Address:</label>
+        <textarea id="address" required></textarea><br>
+        <label for="deliveryDate">Delivery Date:</label>
+        <input type="date" id="deliveryDate" required><br>
+
+        <h2>Payment Information</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" required><br>
+       
+        <button type="submit">Pay</button>
+    </form>
+    <div id="confirmationMessage"></div>
+
+    <script src="script.js">defer</script>
+
+     <!--Footer-->
+     <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>2024 Our Hopsital. All rights reserved.</p>
+                <p>150/E DocCare, Kandy, Sri Lanka| +94 67 7898 897| doccare@gmail.com</p>
+            </div>
+
+            <div class="footer-content">
+                <ul class="social-media-icons">
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./Icons/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="./Icons/twitter.webp" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="./Icons/insta.jpg" alt="Instagram"></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

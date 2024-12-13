@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DocCare</title>
+        <!--Linking with css-->
+        <link rel="stylesheet" href="stylesheet/styles.css">
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <section>
+            <!--Hospital logo-->
+            <div class="logo">
+                <a href="index.html"><img src="Images/Doccare.jpg" alt="Hospital Logo">
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <!--Navigation bara begins-->
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html">Pharmacy</a></li>
+                        <li><a href="payments.html">Payments</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--Navigation bar ends-->
+
+        <!--search bar-->
+        <div class="search-bar-container">
+            <input
+                type="text"
+                id="searchBar"
+                placeholder="Search your product..."
+                oninput="filterProducts()"
+            />
+
+    <!-- Analgesics -->
+    <div class="section">
+        <h2>Analgesics</h2>
+        <div class="medicine">
+            <img src="images/codeine.svg" alt="Codeine">
+            <label for="Codeine">Codeine - $5</label>
+            <input type="number" id="Codeine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/fentanyl.jpg" alt="Fentanyl">
+            <label for="Fentanyl">Fentanyl - $10</label>
+            <input type="number" id="Fentanyl" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/hydrocodone.jpg" alt="Hydrocodone">
+            <label for="Hydrocodone">Hydrocodone - $12</label>
+            <input type="number" id="Hydrocodone" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/methadone.jpg" alt="Methadone">
+            <label for="Methadone">Methadone - $8</label>
+            <input type="number" id="Methadone" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/oxycodone.jpg" alt="Oxycodone">
+            <label for="Oxycodone">Oxycodone - $9</label>
+            <input type="number" id="Oxycodone" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/Naloxone.jpg" alt="Naloxone">
+            <label for="Naloxone">Naloxone - $6</label>
+            <input type="number" id="Naloxone" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Antibiotics -->
+    <div class="section">
+        <h2>Antibiotics</h2>
+        <div class="medicine">
+            <img src="images/dicloxacillin.png" alt="Dicloxacillin">
+            <label for="Dicloxacillin">Dicloxacillin - $7</label>
+            <input type="number" id="Dicloxacillin" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/amoxicillin.jpg" alt="Amoxicillin">
+            <label for="Amoxicillin">Amoxicillin - $8</label>
+            <input type="number" id="Amoxicillin" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/nafciline.jpeg" alt="Nafciline">
+            <label for="Nafciline">Nafciline - $11</label>
+            <input type="number" id="Nafciline" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/oxacillin.jpeg" alt="Oxacillin">
+            <label for="Oxacillin">Oxacillin - $9</label>
+            <input type="number" id="Oxacillin" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/penicillin.jpg" alt="Penicillin">
+            <label for="Penicillin">Penicillin - $5</label>
+            <input type="number" id="Penicillin" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/penicillin-G.webp" alt="Penicillin-G">
+            <label for="Penicillin-G">Penicillin-G - $7</label>
+            <input type="number" id="Penicillin-G" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!--Antidepressants-->
+    <div class="section">
+        <h2>Analgesics</h2>
+        <div class="medicine">
+            <img src="images/citalopram.jpeg" alt="Citalopram">
+            <label for="Citalopram">Citalopram - $9</label>
+            <input type="number" id="Citalopram" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/escitaloprám.jpeg" alt="Escitaloprám">
+            <label for="Escitaloprám">Escitaloprám - $2</label>
+            <input type="number" id="Escitaloprám" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/paroxetine.png" alt="Paroxetine">
+            <label for="Paroxetine">Paroxetine - $10</label>
+            <input type="number" id="Paroxetine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/sertraline.jpg" alt="Sertraline">
+            <label for="Sertraline">Sertraline - $14</label>
+            <input type="number" id="Sertraline" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/vilazodene.jpeg" alt="Vilazodene">
+            <label for="Vilazodene">Vilazodene - $7</label>
+            <input type="number" id="Vilazodene" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/fluticasone.webp" alt="Fluticasone">
+            <label for="Fluticasone">Fluticasone - $12</label>
+            <input type="number" id="Fluticasone" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!--Antihistamines-->
+    <div class="section">
+        <h2>Analgesics</h2>
+        <div class="medicine">
+            <img src="images/ceutrizine.jpeg" alt="Ceutrizine">
+            <label for="Ceutrizine">Ceutrizine - $13</label>
+            <input type="number" id="Ceutrizine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/mecilizine.jpeg" alt="Mecilizine">
+            <label for="Mecilizine">Mecilizine - $17</label>
+            <input type="number" id="Mecilizine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/doxylamine.jpg" alt="Doxylamine">
+            <label for="Doxylamine">Doxylamine - $16</label>
+            <input type="number" id="Doxylamine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/cyclizine.jpeg" alt="Cyclizine">
+            <label for="Cyclizine">Cyclizine - $15</label>
+            <input type="number" id="Cyclizine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/chlorpheniramine.jpeg" alt="Chlorpheniramine">
+            <label for="Chlorpheniramine">Chlorpheniramine - $3</label>
+            <input type="number" id="Chlorpheniramine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/diphenhydramine.avif" alt="Diphenhydramine">
+            <label for="Diphenhydramine">Diphenhydramine - $19</label>
+            <input type="number" id="Diphenhydramine" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!--Antihypertensives -->
+    <div class="section">
+        <h2>Analgesics</h2>
+        <div class="medicine">
+            <img src="images/ace-inhibitor.webp" alt="ACE-inhibitor">
+            <label for="ACE-inhibitor">ACE-inhibitor - $14</label>
+            <input type="number" id="ACE-inhibitor" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/bumetanide.jpeg" alt="Bumetanide">
+            <label for="Bumetanide">Bumetanide - $8</label>
+            <input type="number" id="Bumetanide" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/beta blocker.jpg" alt="Beta blocker">
+            <label for="Beta blocker">Beta blocker - $4</label>
+            <input type="number" id="Beta blocker" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/minoxidil.jpg" alt="Minoxidil">
+            <label for="Minoxidil">Minoxidil - $8</label>
+            <input type="number" id="Minoxidil" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/terazosin.jpeg" alt="Terazosin">
+            <label for="Terazosin">Terazosin - $3</label>
+            <input type="number" id="Terazosin" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+        <div class="medicine">
+            <img src="images/angiotensin.webp" alt="Angiotensin">
+            <label for="Angiotensin">Angiotensin - $10</label>
+            <input type="number" id="Angiotensin" min="0" value="0">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <table id="cartTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will dynamically populate here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="totalPrice">$0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <div id="buttons">
+        <button id="addToFavourites">Add to Favourites</button>
+        <button id="applyFavourites">Apply Favourites</button>
+        <button id="buyNow">Buy Now</button>
+    
+    </div>
+
+    <script src="script.js">defer</script>
+
+        <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>2024 Our Hopsital. All rights reserved.</p>
+                <p>150/E DocCare, Kandy, Sri Lanka| +94 67 7898 897| doccare@gmail.com</p>
+            </div>
+
+            <div class="footer-content">
+                <ul class="social-media-icons">
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./Icons/fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="./Icons/twitter.webp" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="./Icons/insta.jpg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
